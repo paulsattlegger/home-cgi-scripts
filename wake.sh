@@ -21,7 +21,8 @@ Content-type: text/html
 <body>
     <pre class="cmd">
 EOF
-etherwake -i wlxxxxxxxxxxxxx -b -D XX:XX:XX:XX:XX:XX 2>&1
+#etherwake -i wlxxxxxxxxxxxxx -b -D XX:XX:XX:XX:XX:XX 2>&1
+wakeonlan -i 192.168.178.255 XX:XX:XX:XX:XX:XX
 cat <<EOF
     </pre>
 </body>
